@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+}
+.header-content {
+    max-width: 2200px; 
+    margin: 0 auto;
+    margin-top: 130px; 
+    padding: 20px; 
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+header nav .logo h1{
+    margin-top: 30px;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 35px;
+}
+header nav ul li a:hover{
+    color: #BD4749;
+    text-decoration: underline; 
+}
+header nav .navbar_icons i{
+    margin-left: 15px;
+}
+header nav .navbar_icons i:hover{
+    color: #BD4749;
+}
+/*Main*/
+.main_content {
+    margin-bottom: 220px; /* Main içeriği altına biraz boşluk bırak */
+}
+
+main .main_content .main_left .title h3{
+    color: #BD4749;
+    margin-left: 130px;
+}
+main .main_content .main_left .sub_title h1{
+    margin-left: 130px;
+    font-size: 70px;
+}
+main .main_content .main_left .main_paragraph p{
+    color: gray;
+    margin-left: 130px;
+    margin-top: 10px;
+}
+main .main_content .main_left .main_button button{
+    background-color: black;
+    padding: 10px;
+    margin-left: 130px;
+    margin-top: 40px;
+}
+main .main_content .main_left .main_button button i{
+    color: white;
+}
+main .main_content .main_left .main_button button  a{
+    text-decoration: none;
+    color: white;
+}
+main .main_content .main_right{
+    float: right; 
+    width: 50%; 
+}
+.main_images img {
+    max-width: 100%; 
+    height: auto; 
+}
+/*Products*/
+.products{
+    margin-bottom: 220px;
+}
+.products .products_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+.products .products_box .products_card{
+    padding: 20px;
+} 
+.products .products_box .products_card .products_title h3{
+    color: #BD4749;
+}
+.products .products_box .products_card a{
+    color: black;
+}
+/*New Products*/
+.new_products{
+    margin-bottom: 220px;
+}
+.new_products .title_images img{
+    background: url("images/center.png");
+    background-size: cover;
+    background-position: center;
+}
+.new_products .new_products_title h1{
+    text-align: center;
+}
+.new_products .new_products_paragraph p{
+    text-align: center;
+    color: gray;
+}
+.new_products .new_products_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+.new_products .new_products_money{
+    color: gray;
+}
+.new_products .new_products_box .new_products_card button{
+       background-color: black;
+       padding: 20px;
+       /* opacity: 1; */
+}
+.new_products .new_products_box .new_products_card button a{
+    color: white;
+    text-decoration: none;
+}
+.new_products .new_products_box .new_products_card button i{
+    color: white;
+}
+.new_products .new_products_box .new_products_card:hover{
+       /* opacity: 0; */
+}
+/*background_images*/
+.background_images{
+    padding: 120px 100px;
+    background: url("images/cta.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.background_images .background_title h4{
+    font-size: 40px;
+    font-weight: 600;
+}
+.background_images .background_enter .btn{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.background_images .background_enter form{
+    display: grid;
+    grid-template-columns: 1fr, 0.4fr;
+    gap: 1rem;
+}
+.background_images .background_enter:first-child{
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    padding: 15px;
+}
+.background_images .background_enter:last-child{
+    width: 100%;
+    max-width: 180px;
+    display: inline-block;
+    padding: 16px 30px;
+}
+/*Trending Products*/
+.trending_products{
+    margin-top: 220px;
+}
+.trending_products .trending_products_title h1{
+     text-align: center;
+     font-size: 40px;
+}
+.trending_products  .trending_products_paragraph p{
+    color: gray;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.trending_products .trending_products_box .trending_products_card .trending_productstitle{
+     text-align: center; 
+}
+.trending_products .trending_products_box .trending_products_card .trending_products_money{
+    color: gray;
+    text-align: center;
+}
+.trending_products .trending_products_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.trending_products .trending_products_box .trending_products_card{
+    transition: transform 0.3s ease;
+}
+.trending_products .trending_products_box .trending_products_card:hover{
+    transform: scale(1.05);
+}
+/*Gravo Latest News*/
+.gravo_latest{
+    margin-top: 320px;
+    margin-bottom: 220px;
+}
+.gravo_latest .gravo_latest_title h1{
+    text-align: center;
+}
+.gravo_latest .gravo_latest_paragraph p{
+    text-align: center;
+    color: gray;
+    margin-bottom: 50px;
+}
+.gravo_latest .gravo_latest_news_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+.gravo_latest .gravo_latest_news_box .gravo_latest_new_card .end_title{
+    color: gray;
+}
+.gravo_latest .gravo_latest_news_box .gravo_latest_new_card{
+    transition: transform 0.3s ease;
+}
+.gravo_latest .gravo_latest_news_box .gravo_latest_new_card:hover{
+    transform: scale(1.05);
+}
+/*Footer*/
+.footer  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+.footer .footer_tag p{
+  color: gray;
+  margin-bottom: 20px;
+}
+.end{
+    color: gray;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#goToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    background-color: #BD4749;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    z-index: 1000;
+}
